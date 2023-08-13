@@ -1,0 +1,7 @@
+{
+    "env": {
+        
+        "PASS":"Software1.",
+        "JWT_KEY":"secret"
+    }
+}

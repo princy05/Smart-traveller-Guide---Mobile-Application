@@ -1,28 +1,30 @@
 {
-  "nativescript": {
-    "id": "org.nativescript.traveler",
-    "tns-ios": {
-      "version": "5.2.0"
-    },
-    "tns-android": {
-      "version": "5.2.1"
-    }
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
-  "main": "app.js",
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Maximilian Schwarzmüller",
+  "license": "ISC",
   "dependencies": {
-    "nativescript-geolocation": "^5.0.0",
-    "nativescript-mapbox": "^4.0.0",
-    "nativescript-theme-core": "~1.0.4",
-    "nativescript-ui-autocomplete": "^4.0.0",
-    "tns-core-modules": "~5.2.0"
+    "axios": "^0.18.0",
+    "bcrpyt": "^2.0.0",
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^4.13.5",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "nativescript-dev-typescript": "~0.8.0",
-    "nativescript-dev-webpack": "~0.20.0"
-  },
-  "gitHead": "f548ec926e75201ab1b7c4a3a7ceefe7a4db15af",
-  "readme": "NativeScript Application"
+    "nodemon": "^1.12.1"
+  }
 }
