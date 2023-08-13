@@ -1,0 +1,33 @@
+
+<Page xmlns="http://www.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true" xmlns:df="nativescript-ui-dataform">
+ 
+    <StackLayout class="form">
+<Label text="Smart City Traveler" class="head"/>
+
+         <Image src="~/images/logo.jpg"   class="logo"></Image>
+
+        <StackLayout class="input-field">
+            
+            <TextField class="input " hint="Email*" text="{{ user }}" required="true"
+                editable="true" />
+        </StackLayout>
+
+        <StackLayout class="input-field">
+           
+            <TextField class="input " hint="Password*" text="{{ pass }}"
+                secure="true" editable="true" />
+        </StackLayout>
+
+        <Button class="btn btn-primary btn-active" text="Login" tap="{{ makePostRequest }}" />
+
+        	<Label text="Admin Login" class="login-label-admin" tap="{{ admin }}"></Label>
+        
+
+        <Label class="login-label sign-up-label" tap="{{ signup }}">
+		<FormattedString>
+			<Span text="'Don’t have an account'"></Span>
+			<Span text=" Sign up" class="bold" ></Span>
+		</FormattedString>
+	</Label>
+    </StackLayout> 
+</Page>

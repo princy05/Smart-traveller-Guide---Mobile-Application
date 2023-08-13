@@ -1,0 +1,76 @@
+
+<Page xmlns="http://www.nativescript.org/tns.xsd" navigatingTo="navigatingTo" xmlns:au="nativescript-ui-autocomplete" >
+    <Page.actionBar>
+        <ActionBar title="Welcome Traveler">
+         <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="{{ onTap }}"/>
+         </ActionBar>
+    </Page.actionBar>
+
+
+                
+<ScrollView>
+
+
+
+
+<StackLayout Orientation="Horizontal" class="form">
+<Image src="~/images/logo.jpg"   class="logo"></Image>
+
+
+
+
+    <StackLayout class="input-field">
+         <Label class="label" text="Preferences(food, drinks, coffee, shops, arts, outdoors, sights, trending)" textWrap="true" />
+            <TextField class="NonEmptyValidator" hint="Enter likes" text="{{ prefer }}"
+                editable="true" />
+                </StackLayout>
+
+             
+                
+     
+
+        <StackLayout class="input-field">
+            <Label class="label" text="Location to explore*" textWrap="true" />
+            <TextField class="NonEmptyValidator" hint="Enter place" text="{{ location }}"
+                 editable="true" />
+                 </StackLayout>
+
+               <StackLayout class="input-field">
+                <Label class="label" text="Enter total Duration in hours* " textWrap="true" />
+            <TextField class="NonEmptyValidator" hint="Enter Time duration " text="{{ duration }}"
+                 editable="true" />
+                 </StackLayout>
+
+
+                 <StackLayout class="input-field">
+                <Label class="label" text="Enter Start Time* " textWrap="true" />
+            <TextField class="NonEmptyValidator" hint="Time in hh:mm(24hr format)" text="{{ start }}"
+                 editable="true" />
+<Label class="label" text="" textWrap="true" />
+                 <Label class="label" text="Please Note: If preferences does not match you will be directed to popular spots" textWrap="true" />    
+                 </StackLayout>
+
+
+       
+         <Button class="btn btn-primary btn-active" text="Submit" tap="{{ Post }}" />
+
+         
+           </StackLayout>
+           </ScrollView>
+
+
+            
+       
+           
+
+
+           
+           
+
+            
+
+
+       
+          
+    
+</Page>

@@ -1,0 +1,35 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:map="nativescript-mapbox" navigatingTo="navigatingTo">
+
+        <ActionBar title="MapBox">
+        <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onTap"/>
+        </ActionBar>
+  <StackLayout>
+    <Label text="Drag map to see the points" class="title"/>
+    <ContentView height="400" width="350">
+      <!-- IMPORTANT: plugin version 3 uses :MapboxView, lower versions use :Mapbox -->
+     
+      <map:MapboxView
+          accessToken="pk.eyJ1Ijoic3NyYmF6cHVyMTk5NSIsImEiOiJjanRnaGY4cmsyM25qNDNwN2hneGUzemFrIn0.6NxlGcDOoS72vFNLeKXxbw"
+          mapStyle="traffic_night"
+
+          zoomLevel="10"
+          mapReady="onMapReady"
+          showUserLocation="true">
+      </map:MapboxView>
+
+      
+  
+    </ContentView>
+
+    <Label text="Popular places...." class="title"/>
+
+     <Button text="Get Current Location" tap="buttonGetLocationTap"/>
+
+
+  <Button class="btn btn-primary btn-active" text="Logout" tap="logout" />
+
+
+    
+
+  </StackLayout>
+</Page>

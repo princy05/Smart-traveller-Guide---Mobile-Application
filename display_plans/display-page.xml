@@ -1,0 +1,58 @@
+
+<Page xmlns="http://www.nativescript.org/tns.xsd" navigatingTo="navigatingTo" loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="Route details">
+        <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="{{ onTap }}"/>
+        </ActionBar>
+    </Page.actionBar>
+
+
+                
+<ScrollView>
+<StackLayout Orientation="Horizontal" class="form">
+<Image src="~/images/logo.jpg"   class="logo"></Image>
+   
+          <StackLayout class="form"> 
+  
+
+   <Label id="lbl" text="Route 1" textWrap="true" />
+   <ScrollView>
+   <ListView class="list-group" items="{{ countries }}" itemTap="{{ onItemTap }}"
+                style="height:1250px">
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="row" class="list-group-item">
+                       
+                        <Label text="{{ name }}" class="list-group-item-heading"
+                            verticalAlignment="center" style="width: 60%" />
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+            </ScrollView>
+<Button class="btn btn-primary btn-active" text="View plan 1 " tap="{{ routeone }}" />
+
+<Label id="lbl" text="Route 2" textWrap="true" />
+<ScrollView>
+
+
+
+    <ListView class="list-group" items="{{ countrie }}" itemTap="{{ onItemTap }}"
+                style="height:1250px">
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="row" class="list-group-item">
+                       
+                        <Label text="{{ name }}" class="list-group-item-heading"
+                            verticalAlignment="center" style="width: 60%" />
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+            </ScrollView>
+        
+       
+        <Button class="btn btn-primary btn-active" text="View Plan 2" tap="{{ routetwo }}" />
+
+
+    </StackLayout>
+
+    </StackLayout>
+    </ScrollView>
+</Page>
