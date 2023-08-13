@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5c9a225f0d41d7576aab77a9"},"email":"sweee@gmail.com","password":"$2b$10$RXdF9XjgjpoMTpel5JPosOyDLeW3yJnHtVkhW8iIMBuRlV5j1IAA2","name":"sweety","preference":"cafe, restaurants","__v":0}
+{"_id":{"$oid":"5c9a22bb0d41d7576aab77aa"},"email":"mohan@gmail.com","password":"$2b$10$ik8EDHUFBI2MqM5OzKsCWOQKVRrv2l2a46fGmKvpTSCUiAmX4xA9W","name":"mohan","preference":"movies,bar,sports","__v":0}
+{"_id":{"$oid":"5c9a22db0d41d7576aab77ab"},"email":"igna@gmail.com","password":"$2b$10$Vka/Nm8WRYOXF1Q4hLcvueg7ZSA5vDhyPFugGbRyLYkM/iJOTn5NC","name":"ignatious","preference":"cafe","__v":0}
+{"_id":{"$oid":"5c9a37620d41d7576aab77af"},"email":"abc@gmail.com","password":"$2b$10$rSv4c0ZVFDCQ1ujCFyvaBefEcuHHsOAmxy0k/dtO1lMcAYfU/0kou","preference":"food","__v":0}
+{"_id":{"$oid":"5c9a65440d41d7576aab77b0"},"email":"ssr@gmail.com","password":"$2b$10$Ml87aDoHAn9gWlRV6FwtMOz9Ck0jVbXLYvXthiNGw06BbArJfu2BS","name":"Simranjeet","preference":"Food","__v":0}
