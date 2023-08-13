@@ -1,0 +1,26 @@
+
+<Page xmlns="http://www.nativescript.org/tns.xsd" navigatingTo="navigatingTo" >
+    <Page.actionBar>
+        <ActionBar title="Welcome Admin">
+         <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="{{ onTap }}"/>
+         </ActionBar>
+    </Page.actionBar>
+
+
+                
+<ScrollView>
+<StackLayout Orientation="Horizontal" class="form">
+<Image src="~/images/logo.jpg"   class="logo"></Image>
+    
+
+
+       
+         <Button class="btn btn-primary btn-active" text="Delete Users" tap="{{ checkusers }}" />
+         <Button class="btn btn-primary btn-active" text="View Users" tap="{{ Post }}" />
+         <Button class="btn btn-primary btn-active" text="Logout" tap="{{ logout }}" />
+
+         
+           </StackLayout>
+           </ScrollView>
+ 
+</Page>
